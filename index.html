@@ -6,10 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-
+    <div class="container_index">
+      <main class="main_index">
+        <section class="front">
+          <h1 class="title">MODERN ART GALLERY</h1>
+          <div class="front__description">
+            <p class="front__description--description">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+            <a href="./location.html" class="button">
+              <span class="button__text">OUR LOCATION</span>
+              <span class="button__icon">
+                <img src="./img/ico-flecha-derecha.svg" alt="flecha derecha"/>
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="gallery__title">
+            <h2 class="gallery__title--title">YOUR DAY AT THE GALLERY</h2>
+            <p class="gallery__title--description">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>          
+          </div>
+          <picture class="gallery__image1">
+            <source srcset="img/img_1@3x.png" media="(min-width: 1200px)"/>
+            <source srcset="img/img_1@2x.png" media="(min-width: 768px)"/>  
+            <img src="img/img_1.png" alt="imagen 1"/>
+          </picture>
+          <picture class="gallery__image2">
+            <source srcset="img/img_2@3x.png" media="(min-width: 1200px)"/>
+            <source srcset="img/img_2@2x.png" media="(min-width: 768px)"/>  
+            <img src="img/img_2.png" alt="imagen 2"/>
+          </picture>
+          <picture class="gallery__image3">
+            <source srcset="img/img_3@3x.png" media="(min-width: 1200px)"/>
+            <source srcset="img/img_3@2x.png" media="(min-width: 768px)"/>  
+            <img src="img/img_3.png" alt="imagen 3"/>
+          </picture>
+          <div class="gallery__footer">
+            <h2 class="gallery__footer--title">COME & BE INSPIRED</h2>
+            <p class="gallery__footer--description">We’re excited to welcome you to our gallery and see how our collections influence you.</p>          
+          </div>
+        </section>
+      </main>
+      <footer class="footer_index">
+        <img src="./img/logo-blanco.svg" alt="logo">
+        <p class="description_footer">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+        <div class="media-icons">
+            <img src="./img/ico-facebook-blanco.svg" alt="logo facebook">
+            <img src="./img/ico-instagram-blanco.svg" alt="logo instagram">
+            <img src="./img/ico-twitter-blanco.svg" alt="logo twitter">
+        </div>
+    </footer>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
