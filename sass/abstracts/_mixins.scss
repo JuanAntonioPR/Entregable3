@@ -1,0 +1,46 @@
+@use "variables" as v;
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin button {
+  display: inline-block;
+  padding: 12px 58px;
+  border: none;
+  border-radius: 16px 16px 16px 0px;
+  text-decoration: none;
+  background-color: v.$color-fondo-secundario;
+  color: v.$color-blanco-texto;
+  font-size: v.$sizeS;
+  font-weight: 300;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    background-color: v.$color-fondo-secundario-hover;
+    transform: scale(1.05);
+  }
+}
