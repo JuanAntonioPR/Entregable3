@@ -5,27 +5,17 @@ $bp-desktop: 1200px;
 $bp-desktop-xl: 1440px;
 
 // Colores
-$color-blanco-texto: #FFFFFF;
-$color-gris-texto: #ABABAB;
-$color-fondo: #2B2D38;
-$color-fondo-claro: #ffffff25;
-$color-fondo-secundario: #DB2A6B;
-$color-fondo-secundario-hover: #f27ca8;
-$bg-color-box1: #6E1FED;
-$bg-color-box1-hover: #8340ee;
-$bg-color-box2: #60D3D9;
-$bg-color-box2-hover: #8adee2;
-$bg-color-box3: #F4B840;
-$bg-color-box3-hover: #f1c56e;
-$bg-color-box4: #DB2A6B;
-$bg-color-box4-hover: #db5385;
-$bg-color-box5: #FF7E29;
-$bg-color-box5-hover: #f89b5d;
-
+$color-blanco: #FFFFFF;
+$color-negro: #151515;
+$color-gris: #444444;
+$color-naranja: #D5966C;
 
 // Fuentes
-$fuente-principal: "Poppins", sans-serif;
-$fuente-h1: "Merriweather", serif;
-$sizeL: 62px;
-$sizeM: 17px;
-$sizeS: 14px;
+$fuente-encabezado: "Big Shoulders", sans-serif;
+$fuente-cuerpo: "Outfit", sans-serif;
+$headingXL: 96px;
+$headingL: 70px;
+$headingM: 60px;
+$headingS: 36px;
+$bodyM: 22px;
+$bodyS: 18px;
