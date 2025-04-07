@@ -33,6 +33,23 @@
             background-position: center center;
             position: absolute;
         }
+
+        @include ab.breakpoint(desktop) {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+          
+            background-image:
+              linear-gradient(to right, black 0%, black 33%, transparent 33%, transparent 100%),
+              url(../img/img-background@3x.png);
+          
+            background-size: 100% 100%, contain;
+            background-position: top left, center center;
+            background-repeat: no-repeat, no-repeat;
+          }
     }
 
     .container_index .main_index {
@@ -50,8 +67,24 @@
                 margin-left: auto;
             }
 
+            @include ab.breakpoint(desktop) {
+                width: 110%;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 250px;
+                padding: 150px 150px 270px 130px;
+            }
+
             .title {
                 width: 84%;
+
+                @include ab.breakpoint(desktop) {
+                    font-size: ab.$headingXL + 42px;
+                    line-height: 100px;
+                    color: white;
+                    width: 98%;
+                }
+
             }
 
             .front__description {
@@ -59,11 +92,21 @@
                 flex-direction: column;
                 gap: 30px;
 
+                @include ab.breakpoint(desktop) {
+                    gap: 60px;
+                }
+
                 .front__description--description {
                     font-size: ab.$bodyS + 2px;
                     line-height: 26px;
 
                     @include ab.breakpoint(tablet) {
+                        line-height: 30px;
+                    }
+
+                    @include ab.breakpoint(desktop) {
+                        width: 66%;
+                        font-size: ab.$bodyM;
                         line-height: 30px;
                     }
                 }
@@ -83,12 +126,22 @@
                         }
                     }
 
+                    @include ab.breakpoint(desktop) {
+                        width: 51%;
+                    }
+
                     .button__text {
                         padding: 15px 30px;
 
                         @include ab.breakpoint(tablet) {
                             padding: 25px 25px;
                         }
+
+                        @include ab.breakpoint(desktop) {
+                            min-width: max-content;
+                        }
+
+                        
                     }
 
                     .button__icon {
@@ -239,10 +292,84 @@
                     }
                 }
             }
+
+            @include ab.breakpoint(desktop) {
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 30px;
+                overflow: hidden;
+                margin-bottom: 150px;
+
+                .gallery__title {
+                    padding: 66px 0px;
+                    gap: 30px;
+
+                    .gallery__title--title {
+                        font-size: ab.$headingL + 10px;
+                        line-height: 60px;
+                        width: 70%;
+                    }
+
+                    .gallery__title--description {
+                        font-size: ab.$bodyM - 2px;
+                        line-height: 30px;
+                        width: 65%;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .gallery__image1 {
+                    width: 115%;
+                    height: 398px;
+
+                    img {
+                        width: 90%;
+                        transform: translateX(-3%);
+                    };
+                }
+
+                .gallery__image2 {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        translate: 0px;
+                    }
+                }
+
+                .gallery__footer {
+                    grid-area: gallery__footer;
+                    width: 100%;
+                    padding: 80px 80px;
+                    margin-bottom: 0;
+
+                    .gallery__footer--title {
+                        width: 100%;
+                        line-height: 56px;
+                        font-size: ab.$headingM - 8px;
+                    }
+
+                    .gallery__footer--description {
+                        width: 100%;
+                        font-size: ab.$bodyS + 1px;
+                    }
+                }
+            }
         }
 
         @include ab.breakpoint(tablet) {
             padding: 30px;
+        }
+
+        @include ab.breakpoint(desktop) {
+            position: relative;
+            z-index: 1;
         }
 
     }
