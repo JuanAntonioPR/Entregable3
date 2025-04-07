@@ -11,12 +11,24 @@ h1 {
     font-family: ab.$fuente-encabezado;
     font-size: ab.$headingXL;
     line-height: 66px;
+
+    @include ab.breakpoint(tablet) {
+        font-size: ab.$headingXL - 4px;
+        line-height: 70px;
+        font-weight: 800;
+    }
 }
 
 h2 {
     font-family: ab.$fuente-encabezado;
     font-size: ab.$headingL;
     line-height: 56px;
+
+    @include ab.breakpoint(tablet) {
+        font-size: ab.$headingL - 4px;
+        line-height: 50px;
+        font-weight: 700;
+    }
 }
 
 h3 {
