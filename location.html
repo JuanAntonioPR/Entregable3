@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="body_location">
     <div class="container_location">
-        <section class="maps">
-            <picture class="maps__image">
+        <section class="maps__image">
+            <picture>
                 <source srcset="img/img_maps@3x.png" media="(min-width: 1200px)"/>
                 <source srcset="img/img_maps@2x.png" media="(min-width: 768px)"/>  
-                <img src="img/img_maps.png" alt="imagen maps"/>
+                <img class="maps__image--img-maps" src="img/img_maps.png" alt="imagen maps"/>
             </picture>
             <a href="./index.html" class="button">
                 <span class="button__icon">
@@ -23,18 +23,17 @@
                 <span class="button__text">BACK TO HOME</span>
             </a>
         </section>
-        <section class="direction">
-            <div class="direction__box1">
+        <section class="adress">
+            <div class="adress__box1">
                 <h3>OUR LOCATION</h3>
             </div>
-            <div class="direction__box2">
-                <h4>99 King Street</h4>
-                <p class="direction__box2--adress">
-                    Newport
+            <div class="adress__box2">
+                <h4>99 KING STREET</h4>
+                <p class="adress__box2--adress" style="white-space: pre-line">Newport
                     RI 02840                
                     United States of America
                 </p>
-                <p class="direction__box2--description">Our newly opened gallery is located near the Edward King House on 99 King Street, the Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm.</p>
+                <p class="adress__box2--description">Our newly opened gallery is located near the Edward King House on 99 King Street, the Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm.</p>
             </div>
         </section>
     </div>
