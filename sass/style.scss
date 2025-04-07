@@ -9,10 +9,122 @@
 
 .body_index {
     max-width: 100vw;
-    background-color: red;
 
-    .container_index {
-        
+    .background-image {
+        width: 101%;
+        height: 300px;
+        background-image: url(../img/img-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container_index .main_index {
+        padding: 15px;
+        width: 100%;
+
+        .front {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .title {
+                width: 84%;
+            }
+
+            .front__description {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .front__description--description {
+                    font-size: ab.$bodyS + 2px;
+                    line-height: 26px;
+                }
+
+                .button {
+                    margin-bottom: 90px;
+                    width: 77%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 0;
+                    padding: 0;
+
+
+                    &:hover {
+                        .button__icon {
+                            background-color: ab.$color-negro;
+                        }
+                    }
+
+                    .button__text {
+                        padding: 15px 30px;
+                    }
+
+                    .button__icon {
+                        padding: 15px 30px;
+                        background-color: ab.$color-naranja;
+                    }
+                }
+            }
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            * {
+                width: 100%;
+            }
+
+            .gallery__title {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-bottom: 20px;
+
+                
+                .gallery__title--title {
+                    width: 80%;
+                }
+
+                .gallery__title--description {
+                    font-size: ab.$bodyM;
+                    line-height: 34px;
+                }
+            }
+
+            .gallery__footer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-bottom: 60px;
+                background-color: ab.$color-negro;
+                color: ab.$color-blanco;
+                padding: 30px 15px;
+
+                .gallery__footer--title {
+                    width: 70%;
+                }
+
+                .gallery__footer--description {
+                    color: ab.$color-blanco;
+                    font-size: ab.$bodyM;
+                }
+            }
+
+            .gallery__image1 {
+                order: -1;
+                overflow: hidden;
+
+                img {
+                    width: 142%;
+                    transform: translateX(-15%);
+                };
+            }
+        }
     }
 }
 
