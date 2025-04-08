@@ -408,6 +408,14 @@
                     width: 180%;
                     height: auto;
                 }
+
+                @include ab.breakpoint(desktop) {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             a {
@@ -421,6 +429,11 @@
                 @include ab.breakpoint(tablet) {
                     top: 0%;
                     left: 5%;
+                }
+
+                @include ab.breakpoint(tablet) {
+                    top: 0%;
+                    left: 11%;
                 }
 
                 &:hover {
@@ -460,6 +473,11 @@
                 @include ab.breakpoint(tablet) {
                     line-height: 55px;
                 }
+
+                @include ab.breakpoint(desktop) {
+                    font-size: ab.$headingL + 14px;
+                    line-height: 74px;
+                }
             }
 
             .adress__box2 {
@@ -471,11 +489,19 @@
                     gap: 15px;
                 }
 
+                @include ab.breakpoint(desktop) {
+                    gap: 25px;
+                }
+
                 h4 {
                     color: ab.$color-naranja;
 
                     @include ab.breakpoint(tablet) {
                         font-size: ab.$headingS - 4px;
+                    }
+
+                    @include ab.breakpoint(desktop) {
+                        font-size: ab.$headingS;
                     }
                 }
 
@@ -486,6 +512,11 @@
                     @include ab.breakpoint(tablet) {
                         font-size: ab.$bodyS;
                         line-height: 32px;
+                    }
+
+                    @include ab.breakpoint(desktop) {
+                        font-size: ab.$bodyM + 1px;
+                        line-height: 34px;
                     }
                 }
 
@@ -498,6 +529,11 @@
                         font-size: ab.$bodyS;
                         line-height: 32px;
                     }
+
+                    @include ab.breakpoint(tablet) {
+                        font-size: ab.$bodyM + 1px;
+                        line-height: 34px;
+                    }
                 }
             }
 
@@ -505,6 +541,12 @@
                 flex-direction: row;
                 gap: 90px;
                 padding: 50px 40px;
+            }
+
+            @include ab.breakpoint(desktop) {
+                flex-direction: row;
+                gap: 400px;
+                padding: 120px 160px;
             }
         }
     }

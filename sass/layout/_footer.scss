@@ -18,7 +18,7 @@
     @include ab.breakpoint(desktop) {
         gap: 100px;
         padding: 100px 160px;
-        }
+    }
 
     img {
         width: 25%;
@@ -88,11 +88,12 @@
         gap: 70px;
         align-items: flex-start;
         padding: 50px 40px 60px 40px;
-        }
+    }
     
     @include ab.breakpoint(desktop) {
-
-      }
+        gap: 100px;
+        padding: 100px 160px;
+    }
 
     img {
         width: 25%;
@@ -100,11 +101,22 @@
         @include ab.breakpoint(tablet) {
             width: 15%;
         }
+
+        @include ab.breakpoint(desktop) {
+            width: 25%;
+        }
     }
 
     .description_footer {
         @include ab.breakpoint(tablet) {
             margin-right: 50px;
+        }
+
+        @include ab.breakpoint(desktop) {
+            margin-left: 40px;
+            margin-right: 120px;
+            font-size: ab.$bodyM;
+            line-height: 34px;
         }
     }
 
@@ -127,6 +139,10 @@
 
             @include ab.breakpoint(tablet) {
                 width: 22px;
+            }
+
+            @include ab.breakpoint(desktop) {
+                width: 26px;
             }
         }
     }
